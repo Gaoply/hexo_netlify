@@ -34,8 +34,6 @@
   
 
   
-    <link  rel="stylesheet" href="/css/gitalk.css" />
-  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -274,30 +272,15 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="gitalk-container"></div>
-  <script type="text/javascript">
-    function loadGitalk() {
-      addScript('https://cdn.staticfile.org/blueimp-md5/2.13.0/js/md5.min.js');
-      addScript('https://cdn.staticfile.org/gitalk/1.6.2/gitalk.min.js', function () {
-        var gitalk = new Gitalk({
-          clientID: '99a8fc964b8fcebd83cb',
-          clientSecret: '6ea0d2b0d2ab3ca40bc5b372c5373f195cfb3cc8',
-          repo: 'gitalk-comment',
-          owner: 'Gaoply',
-          admin: ["Gaoply"],
-          id: md5(location.pathname),
-          language: 'zh-CN',
-          labels: ["Gitalk"],
-          perPage: 10,
-          pagerDirection: 'last',
-          createIssueManually: true,
-          distractionFreeMode: false
-        });
-        gitalk.render('gitalk-container');
-      });
-    }
-    waitElementVisible('gitalk-container', loadGitalk);
-  </script>
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81MTg1Ny8yODMzOA==">
+    <script type="text/javascript">
+      function loadLivere() {
+        addScript('https://cdn-city.livere.com/js/embed.dist.js');
+      }
+      waitElementVisible('lv-container', loadLivere);
+    </script>
+    <noscript>为正常使用来必力评论功能请允许 JavaScript 运行</noscript>
+  </div>
 
 
               </article>
